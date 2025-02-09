@@ -1,8 +1,8 @@
 // const defaultRuntimeCaching = require("next-pwa/cache");
 const withPWA = require("next-pwa")({
   dest: "public", // Output directory for service worker
-  register: true, // Automatically register service worker
-  skipWaiting: true, // Activate service worker immediately
+  // register: true, // Automatically register service worker
+  // skipWaiting: true, // Activate service worker immediately
   // scope: '/app',
   // sw: 'service-worker.js',
   // runtimeCaching: [
@@ -22,7 +22,4 @@ const withPWA = require("next-pwa")({
   // ],
 });
 
-module.exports = withPWA({
-  reactStrictMode: true,
-  swcMinify: true,
-});
+module.exports = withPWA();
