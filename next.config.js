@@ -6,7 +6,6 @@ const withPWA = require('next-pwa')({
    skipWaiting: true, // Activate service worker immediately
   // scope: '/app',
   sw: 'service-worker.js',
-  disable: false,
   runtimeCaching: [
     {
       urlPattern: /\/api\/todoitem/,
